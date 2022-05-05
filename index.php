@@ -1,4 +1,5 @@
 <?php
+echo"<pre/>";print_r($_GET);die;
 /* class Database
 {
     private static $dbName = 'domain_system';
@@ -35,9 +36,9 @@
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); */
 
-$current = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+/* $current = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $variables = explode("/",$current);
-echo"<pre/>";print_r($variables);die;
+echo"<pre/>";print_r($variables);die; */
 /* try {
 	$sql = "INSERT INTO clicker_phone (phone,date_added) values (?,?)";
 	$q = $pdo->prepare($sql);
