@@ -42,7 +42,7 @@ try {
 }catch(Exception $e) {
 	//echo 'Message: ' .$e->getMessage();
 }
-echo"<pre/>";print_r($_GET);die;
+
 $queryString =  http_build_query($_GET);
 if($_GET['dig'] == 'za'){
 	$redirect_link = "https://go.myquickresource.com/4d2d4d65-8271-4f15-9046-0be935eeaa74?optin_domain=050522_055_com&gender=050522_com&filename=POPEYE_050522_com&email=POPEYE_050522_&".$queryString;
